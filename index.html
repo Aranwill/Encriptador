@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+
+  <title>Encriptador</title>
+</head>
+<body>
+  <header class="logo">
+    <img src="images/Logo.svg" alt="logo">
+  </header>
+  <main class="main">
+    <div class="encriptado">
+      <section class="principal">
+        <textarea id="campoTexto" class="text-area" cols="30" rows="10" placeholder="ingrese el texto aqui"></textarea>
+        <div class="informacion">
+          <img class="not" src="./images/!.svg" alt="not">
+          <h6 class="texto"> Solo letras minúsculas y sin acentos</h6>
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+          <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+        </div>
+      </section>
+      <section class="tarjeta">
+        <img id="imagenSalida" class="img-1" src="images/Muñeco.svg" alt="imagen_salida">
+        <div id="mensajes" class="mensajes">
+          <p class="text-1">Ningún mensaje fue encontrado</p>
+          <p class="text-2">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+        <textarea id="campoMensaje" class="mensaje" cols="25" rows="15"></textarea>
+        <div id="botonCopia" class="contenedor-salida">
+          <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
